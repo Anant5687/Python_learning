@@ -13,7 +13,7 @@ values = get_choice()
 def get_winner(player, computer):
     print(f"You chossen {player}, computer chooses {computer}")
 
-    if player == 'rock' and computer == 'scissors':
+    if player == 'rock' and computer == 'rock':
         return "It's a tie!"
     elif player == 'rock':
         if computer == "paper":
@@ -32,5 +32,5 @@ def get_winner(player, computer):
             return  "Scissor cuts paper, you win!"
         
 
-    win = get_winner(values["player"], values["computer"])
-    print(win)
+win = get_winner(values["player"], values["computer"])
+print(win)
